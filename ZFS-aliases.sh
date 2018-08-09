@@ -39,3 +39,7 @@ alias zsb	 sudo zfs snapshot -r backup02/media@`date +%d-%m-%Y-%T`
 
 # Create new date and timestamped snapshot, data pool
 alias zsd	 sudo zfs snapshot -r data/media@`date +%d-%m-%Y-%T`
+
+# Create a new boot environment
+alias zc	 sudo beadm create `date +%d-%m-%Y-%H%M%S-``freebsd-version`-
+
